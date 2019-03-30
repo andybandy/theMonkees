@@ -1,6 +1,63 @@
+/*GENERAL*/
+#slogan{
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+#btn-availability{
+  padding-top: 0px;
+  width: 100%;
+}
+
+#rock{
+  font-family: quicksand;
+  padding-top:10px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+#live{font-family: 'Gloria Hallelujah', cursive;
+  padding-left: 5px
+}
+h1{
+  font-size: 25px ;
+  font-family: quicksand;
+}
+/*RWD Grid-view W3Schools*/
+* {
+  box-sizing: border-box;
+}
+/* Small screen devices: */
+[class*="column-"] {
+  width: 100%;
+  text-align: center;
+}
+
+
+[class*="column-"] {
+  float: left;
+  padding: 15px;
+ 
+}
+.grid-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Main Image */
+.col-mainIMG{
+ margin-top: 55px;
+ padding: 0px;
+}
+.mainIMG{
+  width: 100%;
+}
+
+
 /*Bootstrap navigation bar**********************************************/
 
-/* */
+/* centered navigation menu */
 .navbar-nav{
   margin: auto;
 }
@@ -157,3 +214,63 @@
         .carousel-control-next-icon{ position: absolute;
                                      top: 90px
         }
+
+
+/*grid-view for bigger screens*/
+
+        @media only screen and (min-width: 800px) {
+          /* desktop: */ 
+          .column-1 {width: 8.33%;}
+          .column-2 {width: 16.66%;}
+          .column-3 {width: 25%;}
+          .column-4 {width: 33.33%;}
+          .column-5 {width: 41.66%;}
+          .column-6 {width: 50%;}
+          .column-7 {width: 58.33%;}
+          .column-8 {width: 66.66%;}
+          .column-9 {width: 75%;}
+          .column-10 {width: 83.33%;}
+          .column-11 {width: 91.66%;}
+          .column-12 {width: 100%;}
+
+          
+        }
+/* Main content control for bigger screens*/
+@media only screen and (min-width: 1024px) {
+  /* desktop: */ 
+  
+#slogan{padding-top: 15px;
+        padding-right: 0px;
+        padding-left: 13px;
+        text-align: left;
+  width: 55%;
+        }
+#slogan h1{font-size: 23px;}
+
+ #rock {padding-top: 20px;
+        padding-right: 0px;
+        text-align: right;
+        width: 30%;
+        
+  }
+ #btn-availability{padding-top: 15px;
+                  padding-left: 0px;
+                  text-align: right;
+                  width: 15%;
+ }
+ .positionControl{text-align: right;}
+        
+}
+@media only screen and (min-width: 1190px) {
+  /* desktop: */ 
+  
+
+      
+#slogan h1{font-size: 26px;}
+#rock{font-size: 18px;
+         width: 33%;
+         padding-right: 8px;
+        
+      }
+#btn-availability{width:12%}   
+}
