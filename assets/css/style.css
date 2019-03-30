@@ -1,0 +1,23 @@
+/*Bootstrap navigation bar**********************************************/
+
+/*collapsed nav icon*/
+.custom-toggler.navbar-toggler {
+  border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {  
+  width: 45px;
+  background-image: url("../../assets/images/toggler.png");
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+/*LOGO (in the navbar)*/
+.navbar-brand{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+#navLogo{
+  color: #904B3A;
+}
+
