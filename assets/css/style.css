@@ -1,18 +1,21 @@
 /*Bootstrap navigation bar**********************************************/
 
-/*collapsed nav icon*/
-.custom-toggler.navbar-toggler {
-  border: none;
+/* */
+.navbar-nav{
+  margin: auto;
 }
+/*collapsed nav icon (toggler)*/
+.custom-toggler.navbar-toggler {
+  border: none;}
 
 .custom-toggler .navbar-toggler-icon {  
   width: 45px;
-  background-image: url("../../assets/images/toggler.png");
-}
+  background-image: url("../../assets/images/toggler.png");}
+  
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: none;
-  box-shadow: none;
-}
+  box-shadow: none;}
+
 /*LOGO (in the navbar)*/
 .navbar-brand{
   font-family: 'Gloria Hallelujah', cursive;
@@ -21,3 +24,136 @@
   color: #904B3A;
 }
 
+/* Availability & Inquire button */
+.btn-success{
+  background-color: #608C5D
+}
+
+
+
+
+/* Availability calendar   ***************************************/
+
+* {box-sizing: border-box;}
+        ul {list-style-type: none;}
+        body {font-family: Verdana, sans-serif;}
+      
+        
+        .month {
+          padding: 70px 25px;
+          width: 100%;
+          background: #608C5D;
+          text-align: center;
+        }
+        
+        .month ul {
+          margin: 0;
+          padding: 0;
+        }
+        
+        .month ul li{
+          color: white;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+        
+        .month .prev {
+          float: left;
+          padding-top: 10px;
+        }
+        
+        .month .next {
+          float: right;
+          padding-top: 10px;
+        }
+        
+        .weekdays {
+          margin: 0;
+          padding: 10px 0;
+          background-color: #ddd;
+        }
+        
+        .weekdays li {
+          display: inline-block;
+          width: 13.6%;
+          color: #666;
+          text-align: center;
+        }
+        
+        .days {
+          padding: 10px 0;
+          background: #eee;
+          margin: 0;
+        }
+        
+        .days li {
+          list-style-type: none;
+          display: inline-block;
+          width: 13.6%;
+          text-align: center;
+          margin-bottom: 5px;
+          font-size:12px;
+          color: #777;
+        }
+        
+        .days li .available {
+          padding: 5px;
+          color: #608C5D;
+          font-weight: bolder;
+          border: solid 1px  #608C5D;
+          
+        }
+        .squareBox{
+            padding-left: 6px;
+            padding-right: 3px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border:solid 1px #608C5D;
+            color: #608C5D;
+            font-weight: bolder;
+        }
+
+        #availableDates{
+           padding-top: 5px;
+        }
+
+        #modalTxt{
+          color: #666;
+        }
+
+        #btn-inquire{
+          margin-left: 12px;
+        }
+        #btn-close{
+          margin-right: 12px;
+          
+        }
+        /* Add media queries for smaller screens */
+      
+        @media screen and (max-width:770px) {
+          .weekdays li, .days li {width: 12.9%;}
+        }
+        @media screen and (max-width:720px) {
+          .weekdays li, .days li {width: 12.9%;}
+        }
+        
+        @media screen and (max-width: 420px) {
+          .weekdays li, .days li {width: 12.5%;}
+          .days li .active {padding: 2px;}
+        }
+        
+        @media screen and (max-width: 290px) {
+          .weekdays li, .days li {width: 12.2%;}
+        }
+        @media screen and (min-width:769px) {
+          .weekdays li, .days li {width: 12.9%;}
+        }
+
+        /* Calendar carousel coontrols */
+        .carousel-control-prev-icon{ position:absolute;
+                                    top: 90px
+         }
+        .carousel-control-next-icon{ position: absolute;
+                                     top: 90px
+        }
