@@ -80,6 +80,7 @@ img{
 
 
 
+
 /*video page*/
 .col-video{
 margin-top: 55px;
@@ -91,24 +92,7 @@ padding: 0px;
 width: 100%;
 }
 
-.albumThumbnail{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 30%;
-}
-.sync-img{
-  position: absolute;
-  bottom: 0px;
- left: 0px;
-  width: 100%;
-}
-.audio-header{
-  position: absolute;
-  top:0px;
- right: 0px;
- max-width: 400px;
-}
+
 
 
 
@@ -312,7 +296,7 @@ width: 100%;
 
 
           .container-a{
-            height: calc((50vw - 30px) * 0.5625);
+            height: calc((49vw - 30px) * 0.5625);
           }
           .container-b{
             height: calc((33.33vw - 30px) * 0.5625)
@@ -345,10 +329,11 @@ width: 100%;
           }
          
         
+        
         }
-/* Main content (landing page) for bigger screens*/
+/* Main content (landing page) for bigger screens
 @media only screen and (min-width: 1024px) {
-  /* desktop: */ 
+  
   
 #slogan{padding-top: 15px;
         padding-right: 0px;
@@ -373,7 +358,7 @@ width: 100%;
         
 }
 @media only screen and (min-width: 1190px) {
-  /* desktop: */ 
+  
   
 
       
@@ -384,4 +369,4 @@ width: 100%;
         
       }
 #btn-availability{width:12%}   
-}
+}*/
