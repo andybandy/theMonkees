@@ -17,7 +17,10 @@
 
 /*GENERAL***********************************/
 .container-main{
-  margin-top: 55px
+  margin-top: 65px;
+  font-family: quicksand;
+  color: rgb(41, 40, 40);
+
 }
 #slogan{
   padding-bottom: 0px;
@@ -45,14 +48,15 @@
 }
 h1{
   font-size: 25px ;
-  font-family: quicksand;
+ 
 }
-h4{
-  font-family: quicksand;
-}
+
 h5 {
-  padding-left: 20px;
-  padding-top: 20px;
+  
+  padding-top: 5px;
+ 
+  
+ 
 }
 
 img{
@@ -66,6 +70,49 @@ img{
   color: #0c4d0c;
   font-weight: bolder;
 }
+#audio-row{
+  height: 100%;
+}
+#audio-col-a{
+padding: 2px;
+height: 63%;
+}
+.line{
+  width: 100%;
+}
+.red{
+  float: left; 
+  width: 33%; 
+  height: 3px;
+  background-color: #904B3A;
+}
+.green{
+  float: left; 
+  width: 33%;
+  height: 3px ;
+  background-color: #608C5D;
+}
+.yellow{
+  float: left;
+  width: 34%;
+  height: 3px ;
+  background-color: #B59B4D;
+}
+.carousel-item{
+  text-align: left;
+  height: 100%;
+}
+.carousel{
+  height: 100%;
+}
+.carousel-inner{
+  height: 100%;
+}
+.album-img{
+width: 35%;
+float: left;
+padding: 5px;
+}
 .container-a:hover{
   
   box-shadow: 0px 0px 9px 0px #0c4d0c;
@@ -74,28 +121,101 @@ img{
   
   box-shadow: 0px 0px 9px 0px #0c4d0c;
 }
+.audioPlayerIframe{
+  width: 100%;
+  height: calc(30vw + 170px);
+
+}
+/*audio player inside iframe*/
+
+.album-thumbnail{
+  width: 30%;
+  margin: 5px;
+  
+}
+.audioPlayerTop{
+  background-color: #EFF1F4;
+}
+.audioPlayerBottom{
+  padding-top: 5px;
+}
+.audio-title{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  padding-left: 30%;
+  padding-top: 5px;
+ 
+ 
+}
+.audioPlayer{
+  width: 100%;
+}
+#audioBox{
+  width: 100%;
+  background-color: #F0F3F4;
+}
+
+#audioElement{
+  width: inherit;
+}
+
+.playTimer{
+  float: right;
+ 
+}
+
+
+/*Playlist inside iFrame*/
+.playListActive{
+  color: #904B3A;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.playList{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.playList a{
+  color: #608C5D;
+ 
+}
+ .playList a:hover{
+  color: #B59B4D;
+  text-decoration: none;
+}
 
 /*link containers (scroll navigation)*/
 .container-a{
   
   max-width: 560px;
   margin: auto;
+  border: solid 1px rgb(168, 165, 165);
  
-  box-shadow: 0px 0px 9px 0px ;
 }
 .container-b{
  
  
   max-width: 560px;
   margin: auto;
-  box-shadow: 0px 0px 9px 0px ;
+  
 }
+
+
 .container-a h3{
   font-family: 'Gloria Hallelujah', cursive;
   font-weight: bold;
   color: #0c4d0c;
   
   padding-bottom: 15px;
+}
+.container-a h6 {
+  
+  font-size: 1.2em;
+}
+.container-a h6 p{
+  color: rgb(41, 40, 40);
 }
 .container-b h3{
   font-family: 'Gloria Hallelujah', cursive;
@@ -108,7 +228,22 @@ a:hover {
   text-decoration: none;
 }
 
+/* Availability & Inquire button */
+.btn-success{
+  background-color: #608C5D;
 
+}
+.btn-success:hover{
+  background-color:  rgb(63, 136, 57);
+  border-color: rgb(63, 136, 57);
+}
+
+#listen{
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  
+}
 /*video page*/
 .col-video{
 
@@ -169,10 +304,7 @@ width: 100%;
   color: #904B3A;
 }
 
-/* Availability & Inquire button */
-.btn-success{
-  background-color: #608C5D
-}
+
 /**************************************************************************/
 
 
@@ -244,9 +376,9 @@ width: 100%;
         
         .days li .available {
           padding: 5px;
-          color: #608C5D;
+          color: white;
           font-weight: bolder;
-          border: solid 1px  #608C5D;
+          background-color:   #608C5D;
           
         }
         .squareBox{
@@ -254,8 +386,8 @@ width: 100%;
             padding-right: 3px;
             padding-top: 2px;
             padding-bottom: 2px;
-            border:solid 1px #608C5D;
-            color: #608C5D;
+           background-color: #608C5D;
+            color: white;
             font-weight: bolder;
         }
 
@@ -290,6 +422,7 @@ width: 100%;
         
         @media screen and (max-width: 290px) {
           .weekdays li, .days li {width: 12.2%;}
+
         }
         @media screen and (min-width:769px) {
           .weekdays li, .days li {width: 12.9%;}
@@ -303,7 +436,13 @@ width: 100%;
                                      top: 90px
         }
 
-
+@media only screen and (min-width: 340px){
+#listen{
+    min-width: 30%;
+    
+    
+  }
+}
 
 /*Grid-view for medium size screens*/
 
@@ -339,6 +478,16 @@ width: 100%;
             position: relative;
             top: 15px;
           }
+          .audioPlayer{
+            width: 70%;
+            margin: auto;
+          }
+        .audio-title{
+          padding-left: 40%
+        }
+        .audio-title h6{
+          font-size: large;
+        }
         }
   /*Grid view for desktop*/        
         
@@ -370,6 +519,7 @@ width: 100%;
           .container-b h3{
             font-size: 140%;
           }
+         
         }
 /* Main content (landing page) for bigger screens
 @media only screen and (min-width: 1024px) {
