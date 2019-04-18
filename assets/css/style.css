@@ -31,7 +31,10 @@
   padding-top: 0px;
   width: 100%;
 }
-
+.header{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 #rock{
   font-family: quicksand;
   padding-top:10px;
@@ -55,10 +58,15 @@ h5 {
   
   padding-top: 5px;
  
-  
- 
-}
 
+}
+a{
+  color: #0c4d0c;
+}
+a:hover{
+  color: #0c4d0c;
+ font-weight: bolder;
+}
 img{
  
   width: 100%;
@@ -109,7 +117,7 @@ height: 63%;
   height: 100%;
 }
 .album-img{
-width: 35%;
+width: 50%;
 float: left;
 padding: 5px;
 }
@@ -126,6 +134,45 @@ padding: 5px;
   height: calc(30vw + 170px);
 
 }
+/*Contact Form*/
+.contactForm{
+  width: 100%;
+  text-align: center;
+  
+}
+/*ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
+#contactFormiFrame{
+  width: inherit;
+  min-height: 380px;
+  padding-top: 10px;
+  padding-left:15px;
+  padding-right: 15px;
+
+}
+
+.messageSuccess{
+  background-color: #4C995F;
+  color: white;
+  margin-bottom: 7px;
+  margin-top: 15px;
+  padding: 4px;
+  text-align: center;
+}
+.contactUs{
+  font-family: quicksand;
+  color: rgb(41, 40, 40);
+}
+
+/*Album*/
+.album{
+ 
+  padding: 5px;
+  box-shadow: 0px 0px 9px 0px #bcc5bc;
+}
+.album p{
+  margin-bottom: 5px
+}
+
 /*audio player inside iframe*/
 
 .album-thumbnail{
@@ -189,13 +236,12 @@ padding: 5px;
 /*link containers (scroll navigation)*/
 .container-a{
   
-  max-width: 560px;
+
   margin: auto;
-  border: solid 1px rgb(168, 165, 165);
+  border: solid 1px rgb(212, 212, 212);
  
 }
 .container-b{
- 
  
   max-width: 560px;
   margin: auto;
@@ -238,12 +284,7 @@ a:hover {
   border-color: rgb(63, 136, 57);
 }
 
-#listen{
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  
-}
+
 /*video page*/
 .col-video{
 
@@ -252,9 +293,11 @@ padding: 0px;
 
 
 #video{
-width: 100%;
+  width: 100%;
 }
-
+.video{
+  padding: 5px;
+}
 
 
 
@@ -433,16 +476,11 @@ width: 100%;
                                     top: 90px
          }
         .carousel-control-next-icon{ position: absolute;
-                                     top: 90px
+                                     top: 90px;
         }
 
-@media only screen and (min-width: 340px){
-#listen{
-    min-width: 30%;
-    
-    
-  }
-}
+
+
 
 /*Grid-view for medium size screens*/
 
@@ -461,14 +499,32 @@ width: 100%;
           .column-md-11 {width: 91.66%;}
           .column-md-12 {width: 100%;}
 
+          #contactFormiFrame{
+            width: 50%;
+           
+          }
 
           .container-a{
-            height: calc((49vw - 30px) * 0.5625);
+            height: 200px;
+            width: 300px;
           }
           .container-b{
             height: calc((33.33vw - 30px) * 0.5625)
           }
-         
+        
+         #oneOfFour{
+           float: right;
+         }
+         #twoOfFour{
+           float:left;
+         }
+         #threeOfFour{
+          float: right;
+        }
+        #fourOfFour{
+          float:left;
+        }
+        
           .container-a h3{
             position: relative;
             top: 15px;
@@ -478,20 +534,36 @@ width: 100%;
             position: relative;
             top: 15px;
           }
-          .audioPlayer{
-            width: 70%;
-            margin: auto;
-          }
+       
         .audio-title{
           padding-left: 40%
         }
         .audio-title h6{
           font-size: large;
         }
+      
+   }
+        @media only screen and (min-width: 924px) {
+          .container-a{
+            height: 250px;
+            width: 400px;
+          }
+          .container-b{
+            height: calc((33.33vw - 30px) * 0.5625)
+          }
+        }
+        @media only screen and (min-width: 1024px) {
+          .container-a{
+            height: 290px;
+            width: 450px;
+          }
+          .container-b{
+            height: calc((33.33vw - 30px) * 0.5625)
+          }
         }
   /*Grid view for desktop*/        
         
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 1324px) {
           /* desktop: */ 
           .column-lg-1 {width: 8.33%;}
           .column-lg-2 {width: 16.66%;}
@@ -507,18 +579,28 @@ width: 100%;
           .column-lg-12 {width: 100%;}
 
           .container-a{
-            height: calc((25vw - 30px) * 0.5625)
+            height: 200px;
+            width: 300px;
           }
+         
+        
           .container-b{
             height: calc((33.33vw - 30px) * 0.5625)
           }
          
-          .container-a h3{
-            font-size: 130%;
+      
+          #oneOfFour{
+            float: none;
           }
-          .container-b h3{
-            font-size: 140%;
+          #twoOfFour{
+            float:none;
           }
+          #threeOfFour{
+           float: none;
+         }
+         #fourOfFour{
+           float:none;
+         }
          
         }
 /* Main content (landing page) for bigger screens
