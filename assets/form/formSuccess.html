@@ -12,34 +12,19 @@
 </head>
 <body>
     <article  class="contactUs">
-        
-        <h4>Contact Us</h4>
-        <div class="line">
-            <div class="red"></div>
-            <div class="green"></div>
-            <div class="yellow"></div>
-       </div>
        
         <div class="messageSuccess">
                 Your message has been sent &#9989;
             </div>
         <form action="formSuccess.html">
-                  
-
-                <input type="text" class="form-control" placeholder="First name">
-                <br>
-           
-          
-
-            <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email">
-       
-          <br>
-             
-                  
-                     <textarea class="form-control" placeholder="Your message" rows="3"></textarea>
-                     <br>
-               
-             <input type="submit" value="Submit" class="btn btn-success btn-sm">
+            <form action="formSuccess.html">
+                <input type="text" class="form-control" placeholder="First name" required>
+                       <br>
+                <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email" required>
+                       <br>
+                <textarea class="form-control" placeholder="Your message" rows="3" required></textarea>
+                            <br>
+                <input type="submit" value="Send" class="btn btn-success btn-sm">
            </form>
     </article>
 </body>

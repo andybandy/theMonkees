@@ -38,20 +38,15 @@
                               <li class="nav-item">
                                           <a class="nav-link" href="theBand.html">THE BAND</a>
                              </li>
-                             <li class="nav-item">
-                                  <a class="nav-link" href="#contactForm">CONTACT</a>
-                                </li>
                             </ul>
-                           
-                            <div class="social"> </div>
+                            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactFormModal">Contact</button>
                         </div>
                   </nav>
           </div>
        
     </header>
-
     <!--Bootstrap Modal Pop Up (check availability)-->
-    <div class="modal fade" id="myModal" role="dialog">
+     <div class="modal fade" id="availabilityModal" role="dialog">
             <div class="modal-dialog">
             
               <!-- Modal content-->
@@ -738,11 +733,9 @@
 
                 </div>
                 <div class="modal-footer">
-                       <a href="index.html" class="mr-auto">
-                        <button id="btn-inquire" class="btn btn-success btn-sm"  >
-                            Inquire Now
-                        </button>
-                     </a>
+                       
+                    <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactFormModal" data-dismiss="modal">Inquire Now</button>
+                     
                          <button id="btn-close" type="button" class="btn btn-default btn-sm" data-dismiss="modal">
                             Close
                         </button>
@@ -751,6 +744,41 @@
               
             </div>
      </div>
+   <!--Bootstrap Modal Pop Up (contact form)-->
+    <div class="modal fade" id="contactFormModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="contactFormHeader">
+            <h4>Contact Us</h4>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+         
+        </div>
+        <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
+        <div class="modal-body">
+          
+
+              
+                    <iframe id="contactFormiFrame" src="assets/form/contactForm.html" frameborder="0">
+                    </iframe>
+
+
+        </div>
+        <div class="modal-footer">
+              
+             
+                 <button id="btn-close" type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+                    Close
+                </button>
+        </div>
+      </div>
+      
+    </div>
+    </div>
 
     <main>
         <div class="container-main">
@@ -767,55 +795,67 @@
                     <h1> Performing <span id="live">Live </span>around the world since 1960's </h1>
                   </div>
                  
-                  <div class="column-4 positionLeft" id="rock">
+                  <div class="column-4 " id="rock">
                        Rock with us at your special event
                   </div>
-                  <div class="column-2 positionLeft" id="btn-availability">
-                         <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Check Availability</button>
+                  <div class="column-2 " id="btn-availability">
+                         <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#availabilityModal">Check Availability</button>
                    </div>
               </div>
               </article>
           </section>
-           
+           <!--Social Media Section-->
+           <section>
+           <div class="grid-row">
+               <hr>
+             <div class="column-sm social">
+               <a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank">
+                <img class="soc-icon-img" src="assets/images/youtube.png" alt="Youtube icon">
+               </a>
+               <a href="https://www.facebook.com/TheMonkees/" target="_blank">
+                <img class="soc-icon-img" src="assets/images/facebook.png" alt="Fcebook icon">
+                </a>
+                <a href="https://twitter.com/themonkees?lang=en" target="_blank">
+                <img class="soc-icon-img" src="assets/images/twitter.png" alt="Twitter icon">
+                </a>
+             </div>
+<hr>
+           </div>
+           <section>
            <!--Scrolling navigation section-->
           <section>
               <aside class="grid-row">
-               
-                   <!--Video section-->
-                  <article class="column-sm column-md-6 column-lg-3">
+                 <!--Video section-->
+                   <article class="column-sm column-md-6 column-lg-3">
               
                     <div  id="oneOfFour">
                       <h4>Watch Now</h4>
                       <div class="container-a">
+                          <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
+                          
                       <a href="video.html">
-                      <img class="video" src="assets/images/videoPoster.png" alt="The Monkees performing video snapshot">
-                   
+                      <img class="video" src="assets/images/videoImg.png" alt="The Monkees performing video snapshot">
+                       <p>Enjoy the music video of The Monkees song "Daydream Believer"</p>
                        </a>
                      </div>
                     </div>
-                  </article>
-  
-
-                  
-                <!--Audio section-->
-                <article class="column-sm column-md-6 column-lg-3">
-                  
-                  <div id="twoOfFour">
+               
+                   </article>
+                 <!--Audio section-->
+                   <article class="column-sm column-md-6 column-lg-3">
+                    <div id="twoOfFour">
                         <h4>Listen Now</h4>
                         <div class="container-a">
-                                     <!--colored line-->
-                                     <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
-
-
+                              <!--colored line-->
+                              <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
+                              
                            <!--Bootstrap carousel (slide show)-->
                             <div  class="carousel slide" data-ride="carousel">
-        
-                            <!-- The slideshow -->
+                                 <!-- The slideshow -->
                             <div class="carousel-inner">
                                 <a href="audioClarksville.html">
-                                <div class="carousel-item active">
-                                  <div class="grid-row">
-                                    
+                                  <div class="carousel-item active">
+                                    <div class="grid-row">
                                         <span>
                                           <img class="album-img" src="assets/images/album.png" alt="Album: More Gratest Hits of The Monkees" >
                                         </span>
@@ -823,12 +863,10 @@
                                            <h4>The Last Train To Clarksville</h4>
                                            <P>The Gratest Hits 1966</P>
                                         </span>
-                                     
                                     </div>
                                 </a>
                              </div>
-                            
-                             
+                         
                             <div class="carousel-item">
                                     <a href="audioSteppingStone.html">
                                       <div class="grid-row">
@@ -881,7 +919,7 @@
                             </div>
                         </div>
                   </div>
-             
+  
                  
                   </article>
   
@@ -896,32 +934,34 @@
                       <div id="threeOfFour">
                           <h4>The Band</h4>
                           <div class="container-a">
-                                    <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
-                           <a href="theBand.html">
-                              <div>
+                            <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
+                            
+                                 <a href="theBand.html">
+                              <div class="theBand">
                                  <img src="assets/images/collage.png" alt="The Monkees picture collage">
                           
-                                  <p>Meet</p>
-                                  <p>The Monkees</p>
+                                  <h5>Meet</h5>
+                                  <p>THE MONKEES</p>
                           </a>
+                          
                          </div>
-                     
+                         
                      </div>
                      
                   </article>
-  
+  <!--Album section-->
                   <article class="column-sm column-md-6 column-lg-3">
                  
                       <div id="fourOfFour">
                           <h4>Albums</h4>
                           <div class="container-a">
-                            <a href="albums.html">
-                          <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
-                          <div>
-                            <img src="assets/images/albums.png">
-                           </div>
+                             <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
+                             
+                               <img src="assets/images/albums.png">
+                           
                            </a>
                            </div>
+                           
                   </article>
              
                 </aside>
@@ -929,12 +969,10 @@
        
        <!--Contact form section-->
        <section>
-        <div class="contactForm" id="contactForm">
-           <iframe id="contactFormiFrame" src="assets/form/contactForm.html" frameborder="0">
-           </iframe>
-         </div>
-       </section>   
+        
          
+        
+        
     </div>
 
     </main>
