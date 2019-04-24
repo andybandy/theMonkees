@@ -54,49 +54,20 @@ h1{
  
 }
 
-h5 {
-  
-  padding-top: 5px;
- 
-
-}
-a{
-  color: #0c4d0c;
-}
-a:hover{
-  color: #0c4d0c;
- font-weight: bolder;
-}
-.container-a a{
-  color: rgb(87, 85, 85);
-}
-.container-a, a:hover{
-  color: #0c4d0c;
-}
-.container-b a{
-  color: rgb(87, 85, 85);
-}
-.container-b, a:hover{
-  color: #0c4d0c;
-}
 img{
  
   width: 100%;
 }
-.green{
-  color: #0c4d0c;
+a{
+  color: #608C5D;
+  font-weight: bold;
 }
-.green:hover{
-  color: #0c4d0c;
-  font-weight: bolder;
+a:hover{
+  color: #608C5D;
+  text-shadow: 0px 0px 0px #608C5D;
 }
-#audio-row{
-  height: 100%;
-}
-#audio-col-a{
-padding: 2px;
-height: 63%;
-}
+
+/*Colored line*/
 .line{
   width: 100%;
   height: 4px;
@@ -119,28 +90,66 @@ height: 63%;
   height: inherit ;
   background-color: #B59B4D;
 }
-.carousel-item{
-  text-align: left;
-  height: 100%;
+
+
+/*ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
+
+.video-container, .audio-container, .album-container, .band-container{
+width: 100%;
+max-width: 300px;
+margin: auto;
+
 }
-.carousel{
-  height: 100%;
+
+ /*Video link*/
+.video-container:hover > .videoBox {
+  box-shadow: 0px 0px 9px 0px #904B3A;
+  border-radius: 20px;
 }
-.carousel-inner{
-  height: 100%;
+#videoLink{
+  color: #904B3A;
 }
-.album-img{
-width: 52%;
-float: left;
-padding: 5px;
+#videoLink:hover{
+  text-shadow: 0px 0px 1px #904B3A;
 }
-.container-a:hover{
+
+
+/*Audio link*/
+.audio-container:hover > .audioBox{
+  box-shadow: 0px 0px 9px 0px #608C5D;
+  border-radius: 14px;
+}
+#audioLink{
+color: #608C5D;
+}
+#audioLink:hover{
+  text-shadow: 0px 0px 1px #608C5D;
+}
+
+
+/*The band link*/
+.band-container:hover > .bandBox{
+  box-shadow: 0px 0px 9px 0px #B59B4D;
+  border-radius: 14px;
+}
+#theBandLink{
+  color: #B59B4D;
+}
+#theBandLink:hover{
+  text-shadow: 0px 0px 1px #B59B4D;
+}
+
+/*Album link*/
+.album-container:hover > .albumBox{
   
   box-shadow: 0px 0px 9px 0px #0c4d0c;
+  border-radius: 14px;
 }
-.container-b:hover{
-  
-  box-shadow: 0px 0px 9px 0px #0c4d0c;
+#albumLink{
+  color: #608C5D;
+}
+#albumLink:hover{
+  text-shadow: 0px 0px 1px #608C5D;
 }
 .audioPlayerIframe{
   width: 100%;
@@ -153,7 +162,7 @@ padding: 5px;
   text-align: center;
   
 }
-/*ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
+
 #contactFormiFrame{
   width: 100%;
   min-height: 380px;
@@ -193,15 +202,6 @@ float: none;
   padding: 5px;
 }
 
-/*Album*/
-.album{
- 
-  padding: 5px;
-  box-shadow: 0px 0px 9px 0px #bcc5bc;
-}
-.album p{
-  margin-bottom: 5px
-}
 
 /*audio player inside iframe*/
 
@@ -263,52 +263,14 @@ float: none;
   text-decoration: none;
 }
 
-/*link containers (scroll navigation)*/
-.container-a{
-  
 
-  margin: auto;
-  border: solid 1px rgb(212, 212, 212);
- 
-}
-.container-b{
- 
-  max-width: 560px;
-  margin: auto;
-  border: solid 1px rgb(212, 212, 212);
-}
-
-
-.container-a h3{
-  font-family: 'Gloria Hallelujah', cursive;
-  font-weight: bold;
-  color: #0c4d0c;
-  
-  padding-bottom: 15px;
-}
-.container-a h6 {
-  
-  font-size: 1.2em;
-}
-.container-a h6 p{
-  color: rgb(41, 40, 40);
-}
-.container-b h3{
-  font-family: 'Gloria Hallelujah', cursive;
-  font-weight: bold;
-  color: #0c4d0c;
-  
-  padding-bottom: 15px;
-}
 a:hover {
   text-decoration: none;
 }
 /*Album section*/
-.theBand p{
-  font-family: 'Gloria Hallelujah', cursive;
-  color: #904B3A;
-  font-weight: bold;
-  font-size: larger;
+.album img{
+  padding: 5px;
+  border: solid 1px rgb(209, 207, 207);
 }
 /* Availability & Inquire button */
 .btn-success{
@@ -528,7 +490,7 @@ padding: 0px;
 
 /*Grid-view for medium size screens*/
 
-        @media only screen and (min-width: 760px) {
+        @media only screen and (min-width: 763px) {
           /* desktop: */ 
           .column-md-1 {width: 8.33%;}
           .column-md-2 {width: 16.66%;}
@@ -543,42 +505,17 @@ padding: 0px;
           .column-md-11 {width: 91.66%;}
           .column-md-12 {width: 100%;}
 
+          #videoAtIndex, #bandAtIndex {
+            float: right;
+          }
+          #audioAtIndex, #albumAtIndex{
+            float: left;
+          }
           .audioPlayerIframe{
             width: 80%;
             height: calc(30vw + 170px);
-          
-          }
-          .container-a{
-            height: 200px;
-            width: 300px;
-          }
-          .container-b{
-            height: calc((33.33vw - 30px) * 0.5625)
           }
         
-         #oneOfFour{
-           float: right;
-         }
-         #twoOfFour{
-           float:left;
-         }
-         #threeOfFour{
-          float: right;
-        }
-        #fourOfFour{
-          float:left;
-        }
-        
-          .container-a h3{
-            position: relative;
-            top: 15px;
-          }
-          .container-b h3{
-            font-size: 120%;
-            position: relative;
-            top: 15px;
-          }
-       
         .audio-title{
           padding-left: 40%
         }
@@ -588,29 +525,17 @@ padding: 0px;
       
    }
         @media only screen and (min-width: 924px) {
-          .container-a{
-            height: 250px;
-            width: 400px;
-          }
-          .container-b{
-            
-          }
+         
         }
         @media only screen and (min-width: 1024px) {
-          .container-a{
-            height: 290px;
-            width: 450px;
-          }
-          .container-b{
-            
-          }
-          #scroll-nav{
-            display: none;
-          }
+         #audioAtIndex, #videoAtIndex, #bandAtIndex, #albumAtIndex{
+           float: none;
+           max-width: 300px;;
+         }
         }
   /*Grid view for desktop*/        
         
-        @media only screen and (min-width: 1324px) {
+        @media only screen and (min-width: 990px) {
           /* desktop: */ 
           .column-lg-1 {width: 8.33%;}
           .column-lg-2 {width: 16.66%;}
@@ -625,29 +550,14 @@ padding: 0px;
           .column-lg-11 {width: 91.66%;}
           .column-lg-12 {width: 100%;}
 
-          .container-a{
-            height: 200px;
-            width: 300px;
-          }
          
         
-          .container-b{
-            height: calc((33.33vw - 30px) * 0.5625)
-          }
+          
+        
+           
          
       
-          #oneOfFour{
-            float: none;
-          }
-          #twoOfFour{
-            float:none;
-          }
-          #threeOfFour{
-           float: none;
-         }
-         #fourOfFour{
-           float:none;
-         }
+       
          
         }
 /* Main content (landing page) for bigger screens

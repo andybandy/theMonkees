@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Quicksand" rel="stylesheet">
 
-    <title>The Monkees Video</title>
+    <title>The Monkees Music</title>
 </head>
 
 <body>
-  <!--Bootstrap Modal Pop Up (check availability)-->
-  <div class="modal fade" id="availabilityModal" role="dialog">
+   <!--Bootstrap Modal Pop Up (check availability)-->
+   <div class="modal fade" id="availabilityModal" role="dialog">
       <div class="modal-dialog">
       
         <!-- Modal content-->
@@ -774,73 +774,36 @@
         </div>
      
     </header>
+  
 
     <main>
         <div class="container-main">
-          <!--Album section-->
+          <!--audio section-->
           <section>
             <article>
-              <div class="header"> 
-                  <h4>Albums</h4>
-                  <!--colored line-->
-                  <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
-              </div>
+              
+                <div class="grid-row">
+                    <div class="column-sm">
+                        <iframe class="audioPlayerIframe" src="audioPlaylist/clarksville.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+              </article>
+              </section>
+           <hr>
+          <!--Check Availabilty-->
+            <section>
+            <aside>
               <div class="grid-row">
-                  
-                  <div class=" column-sm column-md-4 column-lg-4">
-                    <div class="album">
-                      <img src="assets/images/album.png" alt="">
-                      <p><strong>More Greatest Hits of The Monkees</strong>
-                        is a 1982 greatest hits compilation album of songs by the Monkees, 
-                        assembled and released by Arista Records . . .
-                      
-                        <a href="https://en.wikipedia.org/wiki/More_Greatest_Hits_of_The_Monkees" target="_blank">
-                          Wikipedia</a>
-                      </p>
-                      
-                        <a href="https://www.amazon.com/Monkees-More-Greatest-Hits/dp/B000008IKD/ref=sr_1_1?keywords=more+greatest+hits+of+the+monkees&qid=1555925672&s=dmusic&sr=8-1" target="_blank">
-                        Buy on Amazon
-                        </a>
-                        
-                      
+                  <div class="column-sm-4" id="rock">
+                       Rock with us <span id="live">Live</span> at your special event
+                  </div>
+                  <div class="column-sm-2" id="btn-availability">
+                         <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#availabilityModal">Check Availability</button>
                    </div>
-                  </div>
-                  <div class=" column-sm column-md-4 column-lg-4">
-                    <div class="album">
-                      <img src="assets/images/album2.jpg" alt="">
-                      <p><strong>The Very Best of The Monkees</strong>
-                        This single disc compilation features 24 great tracks and absolutely NO filler. 
-                        All the hits are here including 'I'm a Believer', 'Stepping Stone', 'Daydream Believer' and more . . .
-                          
-                      </p>
-                      <a href="https://www.amazon.com/Very-Best-Monkees/dp/B000IB0CVS" target="_blank">
-                         Buy on Amazon</a>
-                    
-                      </div>
-                  </div>
-                  <div class=" column-sm column-md-4 column-lg-4">
-                    <div class="album">
-                      <img src="assets/images/cover.jpg" alt="">
-                      <p><strong>Greatest Hits</strong> (1995 the Monkees album) 
-                      was the third so titled to date. It was issued when Rhino Records
-                         took over the Monkees' catalog, and was intended to replace the existing 
-                         Arista compilations. . .
-                         <a href="https://en.wikipedia.org/wiki/Greatest_Hits_(1995_the_Monkees_album)"target="_blank"> Wikipedia</a>
-                     </p>
-                        <a href="https://www.amazon.com/Monkees-Greatest-Hits/dp/B0000033O3/ref=sr_1_fkmr2_1?keywords=Greatest+Hits+%281995+the+Monkees+album%29&qid=1555926547&s=music&sr=8-1-fkmr2" target="_blank">
-                         <img src="assets/images/amazon.png">
-                        </a>
-                       
-
-                       
-                      </div>
-                  </div>
               </div>
-              <div class="grid-row">
-               
-              </div>
-            </article>
-          </section>
+            </aside>
+             </section>
+         
 
            <!--Social Media Section-->
            <section>
@@ -875,14 +838,7 @@
                      </div>
                      </a>
                      </div>
-                     <div class="column-sm column-md-4">
-                        <a href="audio.html" id="audioLink">
-                       <div class="audio-container">
-                            <h4>Listen Now</h4>
-                            <img class="audioBox" src="assets/images/audioIcon.png">
-                       </div>
-                       </a>
-                       </div>
+          
                      <div class="column-sm column-md-4">
                        <a href="theBand.html" id="theBandLink">
                          <div class="band-container">
@@ -893,15 +849,22 @@
                       </div>
                       </a>
                      </div>
-                   
+                    <div class="column-sm column-md-4">
+                      <a href="albums.html" id=albumLink>
+                       <div class="album-container">
+                       <h4>Albums</h4>
+                       
+                         <img class="albumBox" src="assets/images/albumIcon.png">
+                     
+                      </div>
+                      </a>
+                     </div>
                   </div>
                 </section>
-         
-       
-          
-
+           
+              </div>
+              </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      </body>
      </html>
