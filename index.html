@@ -48,7 +48,6 @@
     <!--Bootstrap Modal Pop Up (check availability)-->
      <div class="modal fade" id="availabilityModal" role="dialog">
             <div class="modal-dialog">
-            
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-header">
@@ -56,14 +55,12 @@
                   <h4 class="modal-title"></h4>
                 </div>
                 <div class="modal-body">
-                  
-
                         <div class="container mt-3">
                             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                               
                                  <!-- Calendar slideshow -->
                                 
-                                  <div class="carousel-inner">
+                               <div class="carousel-inner">
                                 <!--January-->
                                   <div class="carousel-item active">
                                     <div class="month">
@@ -71,6 +68,7 @@
                                            <li>January<br><span style="font-size:18px">2019</span></li>
                                        </ul> 
                                      </div>
+                                     
                                    <ul class="weekdays">
                                       <li>Mo</li>
                                       <li>Tu</li> 
@@ -80,35 +78,35 @@
                                       <li>Sa</li>
                                       <li>Su</li>
                                    </ul>
-                                    
+                                   <div class="line"><div class="red"></div><div class="green"></div><div class="yellow"></div></div>
                                     <ul class="days">  
                                       <li>1</li>
                                       <li>2</li>
                                       <li>3</li>
                                       <li>4</li>
                                       <li>5</li>
-                                      <li>6</li>
+                                      <li><span class="available singleDgt">6</span></li>
                                       <li>7</li>
                                       <li>8</li>
                                       <li>9</li>
-                                      <li><span class="available">10</span></li>
+                                      <li>10</li>
                                       <li>11</li>
                                       <li>12</li>
-                                      <li>13</li>
+                                      <li><span class="booked">13</li>
                                       <li>14</li>
                                       <li>15</li>
                                       <li>16</li>
                                       <li>17</li>
                                       <li>18</li>
                                       <li>19</li>
-                                      <li>20</li>
+                                      <li><span class="available">20</span></li>
                                       <li>21</li>
                                       <li>22</li>
                                       <li>23</li>
                                       <li>24</li>
                                       <li>25</li>
                                       <li>26</li>
-                                      <li>27</li>
+                                      <li><span class="available">27</span></li>
                                       <li>28</li>
                                       <li>29</li>
                                       <li>30</li>
@@ -708,9 +706,7 @@
                                            
                                          </ul>
                                     </div>
-                                   
-
-                                  </div>
+                               </div>
                                
                                 
                                  <!-- Left and right controls -->
@@ -727,21 +723,22 @@
                                      # 
                                    </span>
                                    <span id="modalTxt">&nbsp; Available dates</span>
+                                  </div>
+                                  <div id="bookedOut">
+                                    <span class="squareBox">
+                                      # 
+                                    </span>
+                                    <span id="modalTxt">&nbsp; Booked out</span>
                                  </div>
                         </div>
-                             
-
                 </div>
                 <div class="modal-footer">
-                       
                     <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactFormModal" data-dismiss="modal">Inquire Now</button>
-                     
                          <button id="btn-close" type="button" class="btn btn-default btn-sm" data-dismiss="modal">
                             Close
                         </button>
                 </div>
               </div>
-              
             </div>
      </div>
    <!--Bootstrap Modal Pop Up (contact form)-->
@@ -796,7 +793,7 @@
                   </div>
                  
                   <div class="column-4 " id="rock">
-                       Rock with us at your special event
+                      <p> Rock with us at your special event</p>
                   </div>
                   <div class="column-2 " id="btn-availability">
                          <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#availabilityModal">Check Availability</button>
@@ -809,6 +806,7 @@
            <div class="grid-row">
                <hr>
              <div class="column-sm social">
+                <h5>Follow Us on Social Media</h5>
                <a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank">
                 <img class="soc-icon-img" src="assets/images/youtube.png" alt="Youtube icon">
                </a>

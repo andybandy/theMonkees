@@ -40,6 +40,7 @@
   padding-top:10px;
   padding-bottom: 6px;
   width: 100%;
+  font-size: 1.2em ;
 }
 
 #live{font-family: 'Gloria Hallelujah', cursive;
@@ -66,7 +67,10 @@ a:hover{
   color: #608C5D;
   text-shadow: 0px 0px 0px #608C5D;
 }
-
+.artistIMG{
+  padding: 10px;
+  border: 1px solid rgb(209, 207, 207);
+}
 /*Colored line*/
 .line{
   width: 100%;
@@ -92,11 +96,11 @@ a:hover{
 }
 
 
-/*ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
+
 
 .video-container, .audio-container, .album-container, .band-container{
 width: 100%;
-max-width: 300px;
+max-width: 200px;
 margin: auto;
 
 }
@@ -112,6 +116,7 @@ margin: auto;
 #videoLink:hover{
   text-shadow: 0px 0px 1px #904B3A;
 }
+
 
 
 /*Audio link*/
@@ -151,10 +156,19 @@ color: #608C5D;
 #albumLink:hover{
   text-shadow: 0px 0px 1px #608C5D;
 }
-.audioPlayerIframe{
-  width: 100%;
-  height: calc(30vw + 170px);
 
+
+
+
+
+.audioPlayerIframe{
+  padding: 6px;
+  border: solid 1px rgb(223, 221, 221);
+  width: 100%;
+  min-height:340px;
+  min-width: 316px;
+  max-width: 400px;
+  max-height: 400px;
 }
 /*Contact Form*/
 .contactForm{
@@ -206,7 +220,7 @@ float: none;
 /*audio player inside iframe*/
 
 .album-thumbnail{
-  width: 30%;
+  width: 40%;
   margin: 5px;
   
 }
@@ -220,17 +234,21 @@ float: none;
   position: absolute;
   top: 0px;
   left: 10px;
-  padding-left: 30%;
+  padding-left: 40%;
   padding-top: 5px;
  
  
 }
+
 .audioPlayer{
   width: 100%;
 }
 #audioBox{
   width: 100%;
   background-color: #F0F3F4;
+}
+.audioControl{
+  width: 20px;
 }
 
 #audioElement{
@@ -268,9 +286,21 @@ a:hover {
   text-decoration: none;
 }
 /*Album section*/
-.album img{
+.album p{
+  padding-top: 5px;
+ 
+}
+.album > img{
   padding: 5px;
   border: solid 1px rgb(209, 207, 207);
+ 
+}
+.amazon{
+  width: 100px;
+  border: white solid 1px;
+}
+.amazon:hover{
+   box-shadow: 0px 0px 9px 0px #0c4d0c;
 }
 /* Availability & Inquire button */
 .btn-success{
@@ -425,23 +455,39 @@ padding: 0px;
         
         .days li .available {
           padding: 5px;
+          width: 10px;
           color: white;
           font-weight: bolder;
           background-color:   #608C5D;
           
         }
+        .days li .booked{
+          padding: 5px;
+          color: white;
+          font-weight: bolder;
+          background-color:    #904B3A;
+        }
+        .days li  .singleDgt {
+          padding-left: 9px;
+          padding-right: 9px;
+        }
+        
         .squareBox{
             padding-left: 6px;
             padding-right: 3px;
             padding-top: 2px;
             padding-bottom: 2px;
-           background-color: #608C5D;
             color: white;
             font-weight: bolder;
         }
-
+        #availableDates .squareBox{
+          background-color: #608C5D;
+        }
         #availableDates{
            padding-top: 5px;
+        }
+        #bookedOut .squareBox{
+          background-color: #904B3A;
         }
 
         #modalTxt{
@@ -505,6 +551,12 @@ padding: 0px;
           .column-md-11 {width: 91.66%;}
           .column-md-12 {width: 100%;}
 
+          .column-md-4 .audio-container{
+            float: right;
+          }.column-md-4 .album-container{
+            float: left;
+          }
+
           #videoAtIndex, #bandAtIndex {
             float: right;
           }
@@ -512,8 +564,8 @@ padding: 0px;
             float: left;
           }
           .audioPlayerIframe{
-            width: 80%;
-            height: calc(30vw + 170px);
+            width: 60%;
+          
           }
         
         .audio-title{
@@ -524,18 +576,11 @@ padding: 0px;
         }
       
    }
-        @media only screen and (min-width: 924px) {
-         
-        }
-        @media only screen and (min-width: 1024px) {
-         #audioAtIndex, #videoAtIndex, #bandAtIndex, #albumAtIndex{
-           float: none;
-           max-width: 300px;;
-         }
-        }
+       
+        
   /*Grid view for desktop*/        
         
-        @media only screen and (min-width: 990px) {
+        @media only screen and (min-width: 1025px) {
           /* desktop: */ 
           .column-lg-1 {width: 8.33%;}
           .column-lg-2 {width: 16.66%;}
@@ -551,7 +596,27 @@ padding: 0px;
           .column-lg-12 {width: 100%;}
 
          
-        
+          #audioAtIndex, #videoAtIndex, #bandAtIndex, #albumAtIndex{
+            float: none;
+            max-width: 300px;
+          }
+          .container-main{
+            width: 90%;
+            margin:auto;
+            padding-top: 65px;
+ 
+          }
+           .navbar{
+             width: 90%;
+             margin:auto;
+             padding-left: 1px;
+             padding-right: 1px;
+             background-color: white;
+           }
+           .navbar-nav{
+             padding-right: 50px;
+             
+           }
           
         
            
