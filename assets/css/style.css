@@ -97,7 +97,6 @@ a:hover{
 
 
 
-
 .video-container, .audio-container, .album-container, .band-container{
 width: 100%;
 max-width: 200px;
@@ -574,7 +573,15 @@ padding: 0px;
         .audio-title h6{
           font-size: large;
         }
-      
+        .column-md-4  #floatRight {
+          float: right;
+        }
+        .column-md-4  #floatLeft {
+          float: left;
+        }
+        .column-md-4  #floatNone {
+          float: none;
+        }
    }
        
         
