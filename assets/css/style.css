@@ -164,10 +164,10 @@ color: #608C5D;
   padding: 6px;
   border: solid 1px rgb(223, 221, 221);
   width: 100%;
-  min-height:340px;
+  min-height:360px;
   min-width: 316px;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 420px;
+  max-height: 450px;
 }
 /*Contact Form*/
 .contactForm{
