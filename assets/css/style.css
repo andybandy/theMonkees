@@ -478,12 +478,7 @@ padding: 15px;
           background-color:   #608C5D;
           
         }
-        .days li .booked{
-          padding: 5px;
-          color: white;
-          font-weight: bolder;
-          background-color:    #904B3A;
-        }
+        
         .days li  .singleDgt {
           padding-left: 9px;
           padding-right: 9px;
@@ -503,9 +498,7 @@ padding: 15px;
         #availableDates{
            padding-top: 5px;
         }
-        #bookedOut .squareBox{
-          background-color: #904B3A;
-        }
+      
 
         #modalTxt{
           color: #666;
