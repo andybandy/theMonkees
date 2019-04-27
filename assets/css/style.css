@@ -70,6 +70,7 @@ a:hover{
 .artistIMG{
   padding: 10px;
   border: 1px solid rgb(209, 207, 207);
+  margin-bottom: 10px;
 }
 /*Colored line*/
 .line{
@@ -320,12 +321,13 @@ a:hover {
 /*video page*/
 .col-video{
 
-padding: 0px;
+padding: 15px;
 }
 
 
 #video{
   width: 100%;
+  margin-bottom: 10px
 }
 .video{
   padding: 5px;
