@@ -16,11 +16,14 @@
            
         
             <form action="formSuccess.html">
-                <input type="text" class="form-control" placeholder="First name" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="e.g. Mike" required>
                        <br>
-                <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email" required>
+                <label for="email">Email</label>    
+                <input type="email" id="email" class="form-control"  aria-describedby="emailHelp" placeholder="e.g. mike@example.com" required>
                        <br>
-                <textarea class="form-control" placeholder="Your message" rows="7" required></textarea>
+                <label for="message">Message</label>     
+                <textarea id="message" class="form-control" placeholder="Your message" rows="3" required></textarea>
                             <br>
                 <input type="submit" value="Send" class="btn btn-success btn-sm">
            </form>

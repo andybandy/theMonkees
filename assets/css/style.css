@@ -4,7 +4,7 @@
 }
 [class*="column-"] {
   float: left;
-  padding: 15px;
+  padding: 0px;
 
 }
 .grid-row::after {
@@ -24,6 +24,9 @@
 }
 #slogan{
   padding-bottom: 0px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
 }
 
@@ -67,10 +70,17 @@ a:hover{
   color: #608C5D;
   text-shadow: 0px 0px 0px #608C5D;
 }
+.artist{
+  padding: 15px;
+}
 .artistIMG{
   padding: 10px;
   border: 1px solid rgb(209, 207, 207);
   margin-bottom: 10px;
+}
+#bio{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*Colored line*/
 .line{
@@ -100,8 +110,9 @@ a:hover{
 
 .video-container, .audio-container, .album-container, .band-container{
 width: 100%;
-max-width: 200px;
+max-width: 230px;
 margin: auto;
+padding: 15px;
 
 }
 
@@ -183,7 +194,9 @@ color: #608C5D;
 
 
 }
-
+label{
+  padding-left: 8px;
+}
 .messageSuccess{
   background-color: #4C995F;
   color: white;
@@ -195,7 +208,7 @@ color: #608C5D;
 .contactUs{
   font-family: quicksand;
   color: rgb(41, 40, 40);
-  text-align: center;
+  text-align: left;
 }
 .contactFormHeader{
   width: 100%;
@@ -288,8 +301,11 @@ a:hover {
 /*Album section*/
 .album p{
   padding-top: 5px;
- 
 }
+ .album{
+   padding: 15px;
+ }
+
 .album > img{
   padding: 5px;
   border: solid 1px rgb(209, 207, 207);
@@ -584,6 +600,9 @@ padding: 15px;
         .column-md-4  #floatNone {
           float: none;
         }
+        #bio{
+          padding-top: 15px;
+          
    }
        
         
