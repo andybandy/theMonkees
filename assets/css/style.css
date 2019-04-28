@@ -82,6 +82,7 @@ a:hover{
   padding-left: 15px;
   padding-right: 15px;
 }
+
 /*Colored line*/
 .line{
   width: 100%;
@@ -378,6 +379,9 @@ padding: 15px;
 /* centered navigation menu */
 .navbar-nav{
   margin: auto;
+  font-family: quicksand;
+  color: rgb(41, 40, 40);
+
 }
 /*collapsed nav icon (toggler)*/
 .custom-toggler.navbar-toggler {
@@ -603,7 +607,7 @@ padding: 15px;
         
   /*Grid view for desktop*/        
         
-        @media only screen and (min-width: 1025px) {
+        @media only screen and (min-width: 992px) {
           /* desktop: */ 
           .column-lg-1 {width: 8.33%;}
           .column-lg-2 {width: 16.66%;}
