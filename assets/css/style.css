@@ -363,12 +363,14 @@ padding: 15px;
 
 /* Main Image *******************/
 .col-mainIMG{
-
+  width:100%;
+  min-height: calc(100vw * 0.56);
+ background-repeat: no-repeat;
  padding: 0px;
+ background-image: url(../images/monkees.jpg);
+ background-size: contain;
 }
-.mainIMG{
-  width: 100%;
-}
+
 
 
 /*Bootstrap navigation bar**********************************************/
@@ -616,7 +618,10 @@ padding: 15px;
           .column-lg-11 {width: 91.66%;}
           .column-lg-12 {width: 100%;}
 
-         
+          .col-mainIMG{
+            min-height: calc(100vw * 0.5);
+            margin-top: -30px;
+          }
           #audioAtIndex, #videoAtIndex, #bandAtIndex, #albumAtIndex{
             float: none;
             max-width: 300px;
@@ -646,9 +651,17 @@ padding: 15px;
        
          
         }
-/* Main content (landing page) for bigger screens
-@media only screen and (min-width: 1024px) {
-  
+ 
+@media only screen and (min-width: 1524px) {
+  .col-mainIMG{
+    
+    min-height: calc((100vw * 0.5) - 100px);
+    background-size: 100%;
+  }
+
+}
+
+  /*
   
 #slogan{padding-top: 15px;
         padding-right: 0px;
