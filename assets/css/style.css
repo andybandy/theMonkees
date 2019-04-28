@@ -310,6 +310,7 @@ a:hover {
 }
  .album{
    padding: 15px;
+   max-width: 500px
  }
 
 .album > img{
@@ -642,13 +643,7 @@ padding: 15px;
              padding-right: 50px;
              
            }
-          
-        
-           
-         
-      
        
-         
         }
  
 @media only screen and (min-width: 1524px) {
