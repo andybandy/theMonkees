@@ -27,12 +27,12 @@
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 100%;
+  
 }
 
 #btn-availability{
   padding-top: 0px;
-  width: 100%;
+  
 }
 .header{
   padding-left: 15px;
@@ -42,7 +42,7 @@
   font-family: quicksand;
   padding-top:10px;
   padding-bottom: 6px;
-  width: 100%;
+  
   font-size: 1.2em ;
 }
 
@@ -654,47 +654,43 @@ padding: 15px;
  
 @media only screen and (min-width: 1524px) {
   .col-mainIMG{
-    
-    min-height: calc((100vw * 0.5) - 100px);
+    margin-top: -50px;
+    min-height: calc((100vw * 0.5) - 120px);
     background-size: 100%;
   }
 
-}
 
-  /*
-  
-#slogan{padding-top: 15px;
-        padding-right: 0px;
-        padding-left: 13px;
-        text-align: left;
-  width: 55%;
-        }
-#slogan h1{font-size: 23px;}
+  .column-xlg-1 {width: 8.33%;}
+  .column-xlg-2 {width: 16.66%;}
+  .column-xlg-3 {width: 25%;}
+  .column-xlg-4 {width: 33.33%;}
+  .column-xlg-5 {width: 41.66%;}
+  .column-xlg-6 {width: 50%;}
+  .column-xlg-7 {width: 58.33%;}
+  .column-xlg-8 {width: 66.66%;}
+  .column-xlg-9 {width: 75%;}
+  .column-xlg-10 {width: 83.33%;}
+  .column-xlg-11 {width: 91.66%;}
+  .column-xlg-12 {width: 100%;}
 
- #rock {padding-top: 20px;
-        padding-right: 0px;
-        text-align: right;
-        width: 30%;
-        
-  }
- #btn-availability{padding-top: 15px;
-                  padding-left: 0px;
-                  text-align: right;
-                  width: 15%;
+
+ #slogan-check > #rock{
+   padding-top: 20px;
+   padding-right: 10px;
+   text-align: right;
+   width: 40%;
+
+ } 
+ #slogan-check > #btn-availability{
+   padding-top: 20px;
+   text-align: right;
+   width: 10%;
  }
- .positionControl{text-align: right;}
-        
+ #slogan-check > #slogan{
+   text-align:left;
+ }
+ .column-sm-social{
+   margin-top: -10px;
+ }
 }
-@media only screen and (min-width: 1190px) {
-  
-  
-
-      
-#slogan h1{font-size: 26px;}
-#rock{font-size: 18px;
-         width: 33%;
-         padding-right: 8px;
-        
-      }
-#btn-availability{width:12%}   
-}*/
+ 
