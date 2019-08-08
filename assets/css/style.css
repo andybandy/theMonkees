@@ -187,7 +187,7 @@ color: #608C5D;
 #contactFormiFrame{
   width: 100%;
   min-height: 410px;
-
+  border: none;
 
 }
 label{
