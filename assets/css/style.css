@@ -336,11 +336,11 @@ a:hover {
   border-color: rgb(63, 136, 57);
 }
 
-#btn-close{
+.btn-close{
   border: solid 1px rgb(146, 142, 142);
   font-family: quicksand;
   color: rgb(41, 40, 40);
-
+  margin-right: 12px;
 }
 /*video page*/
 .col-video{
@@ -509,10 +509,7 @@ padding: 15px;
         #btn-inquire{
           margin-left: 12px;
         }
-        #btn-close{
-          margin-right: 12px;
-          
-        }
+      
         /* Media queries for smaller screens */
       
         @media screen and (max-width:770px) {
