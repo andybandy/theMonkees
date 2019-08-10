@@ -523,8 +523,8 @@ padding: 15px;
         @media screen and (max-width: 420px) {
           .weekdays li, .days li {width: 12.5%;}
           .days li .active {padding: 2px;}
-          .container.mt-3 {padding-left: 2px;
-                              padding-right: 2px}
+          .container.mt-3 {padding-left: 0px;
+                              padding-right: 0px}
         }
         
         @media screen and (max-width: 290px) {
