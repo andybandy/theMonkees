@@ -532,12 +532,10 @@ padding: 15px;
 
         }
         @media screen and (max-width: 340px) {
-          .weekdays.days {font-size: smaller;
-                          padding-left: 0px;
-                          padding-right: 0px;              
-          }
-         
-
+          .weekdays .days {font-size: smaller;}
+          .container.mt-3{padding-left: 0px;
+                          padding-right: 0px; }
+      
 
         }
 
