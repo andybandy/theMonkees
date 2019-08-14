@@ -101,7 +101,7 @@ Testing was done with Google Chrome developer tools and manually on different br
 * **Audio player.** The player is designed by using iFrame tag to simulate play-list functionality. Therefore, when a song name is clicked it should load an appropriate frame and auto-play the song. However, due to Safari policy, auto-play is not allowed by certain browsers. 
 ## Deployment.
 
-The website is published on github pages at [https://andriusci.github.io/theMonkees/](https://andriusci.github.io/theMonkees/)
+The website is published on github pages at [https://andybandy.github.io/theMonkees/](https://andybandy.github.io/theMonkees/)
 
 #### Deployment procedure.
 
